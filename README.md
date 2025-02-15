@@ -102,9 +102,9 @@ module.exports = messageRoute;
 ---
 
 ## 📌 Frontend Code (React.js)
-
-```javascript
-import React, { useState } from 'react';
+{% raw %}
+```
+javascriptimport React, { useState } from 'react';
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
 import axios from 'axios';
@@ -148,33 +148,33 @@ const App = () => {
               rows={3}
               value={Question}
               onChange={(e) => setQuestion(e.target.value)}
-              // InputProps={{ style: { color: 'white' } }}  uncomment the two lines
-              // InputLabelProps={{ style: { color: 'gray' } }} uncomment the two lines
+              InputProps={{ style: { color: 'white' } }} 
+              InputLabelProps={{ style: { color: 'gray' } }}
             />
             <Button variant="contained" type="submit">Submit</Button>
           </form>
         </div>
 
         <div className="output relative flex overflow-y-auto">
-         // {Output && <Button variant="outlined" onClick={() => navigator.clipboard.writeText(Output)}>Copy</Button>}
+          {Output && <Button variant="outlined" onClick={() => navigator.clipboard.writeText(Output)}>Copy</Button>}
           <div className="para text-white relative overflow-y-auto p-10">
-         //   {loading ? (
-           //   <Box sx={{ width: 900 }}>
-               // <Skeleton variant="text" sx={{ fontSize: '1rem' }} animation="wave" /> uncomment the line
+            {loading ? (
+              <Box sx={{ width: 900 }}>
+                <Skeleton variant="text" sx={{ fontSize: '1rem' }} animation="wave" />
               </Box>
             ) : (
               <ReactMarkdown 
-            //    components={{ uncomment the line
-              //    code: ({ node, inline, className, children, ...props }) => uncomment the line 
+                components={{ 
+                  code: ({ node, inline, className, children, ...props }) => 
                     !inline ? (
-                //      <pre><code {...props}>{children}</code></pre> uncomment the line
+                      <pre><code {...props}>{children}</code></pre>
                     ) : (
-                  //    <code {...props}>{children}</code> uncomment the line
+                      <code {...props}>{children}</code>
                     )
                 }} 
-               // remarkPlugins={[[remarkGfm, { singleTilde: false }]]} uncomment the line
+                remarkPlugins={[[remarkGfm, { singleTilde: false }]]}
               >
-              //  {Output}  uncomment the line
+                {Output}
               </ReactMarkdown>
             )}
           </div>
@@ -185,5 +185,6 @@ const App = () => {
 };
 
 export default App;
-
+```
 ---
+{% endraw %}
