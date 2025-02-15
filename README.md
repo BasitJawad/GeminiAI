@@ -1,6 +1,3 @@
----
-layout: none
----
 # GeminiAI
 
 GeminiAI is a simple web application that interacts with Google's Generative AI to answer user questions. This project consists of a **backend** built with **Node.js and Express** and a **frontend** using **React.js and Material-UI**.
@@ -106,7 +103,7 @@ module.exports = messageRoute;
 
 ## 📌 Frontend Code (React.js)
 
-```javascript
+```jsx
 import React, { useState } from 'react';
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
@@ -151,8 +148,10 @@ const App = () => {
   rows={3}
   value={Question}
   onChange={(e) => setQuestion(e.target.value)}
-  InputProps={{ style: { color: textColor } }}  // Corrected
+
+  InputProps={{ style: { color: textColor } }} 
   InputLabelProps={{ style: { color: 'gray' } }}
+
 />
 
             <Button variant="contained" type="submit">Submit</Button>
