@@ -103,7 +103,7 @@ module.exports = messageRoute;
 
 ## 📌 Frontend Code (React.js)
 
-```javascript
+```
 {% raw %}
 import React, { useState } from 'react';
 import TextField from '@mui/material/TextField';
@@ -144,15 +144,15 @@ const App = () => {
         <div className="entry flex justify-center items-center">
           <form onSubmit={SendToBackend}>
            <TextField
-  label="What do you want to learn about?"
-  multiline
-  rows={3}
-  value={Question}
-  onChange={(e) => setQuestion(e.target.value)}
-  InputProps={{ style: { color: textColor } }} 
-  InputLabelProps={{ style: { color: 'gray' } }}
+            label="What do you want to learn about?"
+            multiline
+            rows={3}
+            value={Question}
+            onChange={(e) => setQuestion(e.target.value)}
+            InputProps={{ style: { color: textColor } }} 
+            InputLabelProps={{ style: { color: 'gray' } }}
 
-/>
+        />
             <Button variant="contained" type="submit">Submit</Button>
           </form>
         </div>
@@ -178,10 +178,10 @@ const App = () => {
           </div>
         </div>
       </div>
-{% endraw %}
     </>
   );
 };
 
 export default App;
+{% endraw %}
 ---
