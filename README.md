@@ -103,7 +103,8 @@ module.exports = messageRoute;
 
 ## 📌 Frontend Code (React.js)
 
-```jsx
+```javascript
+{% raw %}
 import React, { useState } from 'react';
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
@@ -148,13 +149,10 @@ const App = () => {
   rows={3}
   value={Question}
   onChange={(e) => setQuestion(e.target.value)}
-{% raw %}
   InputProps={{ style: { color: textColor } }} 
   InputLabelProps={{ style: { color: 'gray' } }}
-{% endraw %}
 
 />
-{% raw %}
             <Button variant="contained" type="submit">Submit</Button>
           </form>
         </div>
