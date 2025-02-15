@@ -142,15 +142,16 @@ const App = () => {
       <div className="wrapper bg-black w-screen h-screen flex justify-between flex-col items-center">
         <div className="entry flex justify-center items-center">
           <form onSubmit={SendToBackend}>
-            <TextField
-              label="What do you want to learn about?"
-              multiline
-              rows={3}
-              value={Question}
-              onChange={(e) => setQuestion(e.target.value)}
-              InputProps={{ style: { color: 'white' } }}
-              InputLabelProps={{ style: { color: 'gray' } }}
-            />
+           <TextField
+  label="What do you want to learn about?"
+  multiline
+  rows={3}
+  value={Question}
+  onChange={(e) => setQuestion(e.target.value)}
+  InputProps={{ style: { color: textColor } }}  // Corrected
+  InputLabelProps={{ style: { color: 'gray' } }}
+/>
+
             <Button variant="contained" type="submit">Submit</Button>
           </form>
         </div>
