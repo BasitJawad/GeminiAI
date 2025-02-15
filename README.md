@@ -1,3 +1,6 @@
+---
+layout: none
+---
 # GeminiAI
 
 GeminiAI is a simple web application that interacts with Google's Generative AI to answer user questions. This project consists of a **backend** built with **Node.js and Express** and a **frontend** using **React.js and Material-UI**.
