@@ -148,9 +148,10 @@ const App = () => {
   rows={3}
   value={Question}
   onChange={(e) => setQuestion(e.target.value)}
-
+{% raw %}
   InputProps={{ style: { color: textColor } }} 
   InputLabelProps={{ style: { color: 'gray' } }}
+{% endraw %}
 
 />
 
