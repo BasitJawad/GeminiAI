@@ -104,7 +104,7 @@ module.exports = messageRoute;
 ## 📌 Frontend Code (React.js)
 {% raw %}
 ```
-javascriptimport React, { useState } from 'react';
+import React, { useState } from 'react';
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
 import axios from 'axios';
@@ -188,3 +188,9 @@ export default App;
 ```
 ---
 {% endraw %}
+
+## 🙌 Thanks for Reading!
+
+Thank you for checking out GeminiAI! If you find this project helpful, feel free to ⭐ star the repository on GitHub. Contributions, feedback, and suggestions are always welcome!
+
+🚀 Happy Coding! 🚀
